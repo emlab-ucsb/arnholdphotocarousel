@@ -41,7 +41,7 @@ jobs:
       - name: Build site from the Drive folder
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: Rscript R/build_site.R
+        run: Rscript build_site.R
 
       - uses: actions/upload-pages-artifact@v3
         with:
