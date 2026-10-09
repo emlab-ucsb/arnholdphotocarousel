@@ -23,7 +23,7 @@ out_dir   <- "_site"
 photo_dir <- file.path(out_dir, "photos")
 unlink(out_dir, recursive = TRUE)
 dir.create(photo_dir, recursive = TRUE)
-invisible(file.copy("site/index.html", out_dir))
+invisible(file.copy("index.html", out_dir))
 
 # Read the public folder without logging in. An optional API key of your
 # own (repo secret GOOGLE_API_KEY) avoids shared rate limits.
